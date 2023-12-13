@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #74ebd5, #acb6e5); /* Fondo degradado suave y coherente */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Blanco con transparencia para suavizar el fondo */
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1); /* Sombra suave */
+    width: 80%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Color oscuro para los enlaces */
+    background-color: transparent; /* Fondo transparente para un diseño minimalista */
+    padding: 8px 0; /* Padding solo vertical */
+    display: block; /* Los enlaces ocupan todo el ancho del li */
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    padding-left: 8px; /* Desplazar ligeramente a la derecha al pasar el ratón para efecto sutil */
+    color: #555; /* Cambiar ligeramente el color al pasar el ratón */
+    text-decoration: none; /* Asegurar que no hay subrayado */
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
